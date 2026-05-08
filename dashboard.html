@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Bethel Drums</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="top-banner">
+  <div class="container top-banner-inner">
+    <div class="top-socials">
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://instagram.com/bethel.drums" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div class="top-contact">
+      <a href="mailto:betheldrums01@gmail.com">betheldrums01@gmail.com</a>
+      <a href="tel:+254700000000">+254 700 000 000</a>
+    </div>
+  </div>
+</div>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo"><img src="logo.png" alt="Bethel Drums" /></a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="about.html" class="nav-link">About Us</a></li>
+      <li><a href="services.html" class="nav-link">Our Services</a></li>
+      <li><a href="bookings.html" class="nav-link">Bookings</a></li>
+      <li><a href="dashboard.html" class="nav-link active">Dashboard</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="page-hero booking-hero">
+  <div class="page-hero-bg"></div>
+  <div class="container">
+    <p class="hero-eyebrow">Admin</p>
+    <h1 class="page-hero-title">Website <span class="gold">Dashboard</span></h1>
+    <p class="page-hero-sub">Manage text, contact details, and view all bookings.</p>
+  </div>
+</section>
+
+<section class="booking-section">
+  <div class="container">
+    <div class="info-card" id="dashboardLoginCard">
+      <h3>Dashboard Login</h3>
+      <form id="dashboardLoginForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="dashboardLoginEmail">Email</label>
+            <input id="dashboardLoginEmail" type="email" placeholder="admin@bethel.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="dashboardLoginPassword">Password</label>
+            <input id="dashboardLoginPassword" type="password" placeholder="Enter password" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+        <p id="dashboard-login-msg" class="dashboard-msg"></p>
+      </form>
+    </div>
+
+    <div class="dashboard-grid" id="dashboardApp" style="display:none;">
+      <div class="info-card">
+        <h3>Site Settings</h3>
+        <form id="dashboardSettingsForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="sitePhone">Phone Number</label>
+              <input id="sitePhone" type="text" placeholder="+254 700 000 000" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="siteWhatsapp">WhatsApp Number (international format)</label>
+              <input id="siteWhatsapp" type="text" placeholder="254700000000" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="siteEmail">Email</label>
+              <input id="siteEmail" type="email" placeholder="betheldrums01@gmail.com" />
+            </div>
+          </div>
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="facebookLink">Facebook Link</label>
+              <input id="facebookLink" type="url" placeholder="https://facebook.com/yourpage" />
+            </div>
+            <div class="form-group">
+              <label for="linkedinLink">LinkedIn Link</label>
+              <input id="linkedinLink" type="url" placeholder="https://linkedin.com/in/yourprofile" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="instagramLink">Instagram Link</label>
+              <input id="instagramLink" type="url" placeholder="https://instagram.com/yourhandle" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="homeTagline">Home Tagline</label>
+              <input id="homeTagline" type="text" placeholder="Where rhythm meets purpose." />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="portfolioLink">Portfolio Link</label>
+              <input id="portfolioLink" type="url" placeholder="https://your-portfolio-link.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="aboutText">About Intro Text</label>
+              <textarea id="aboutText" rows="4" placeholder="About section intro text"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="aboutVideos">About Video URLs (optional, one video URL per line)</label>
+              <textarea id="aboutVideos" rows="5" placeholder="https://www.youtube.com/watch?v=...&#10;https://www.youtube.com/watch?v=..."></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="aboutVideoUploadFiles">Upload About Videos (.mp4)</label>
+              <input id="aboutVideoUploadFiles" type="file" accept=".mp4,video/mp4" multiple />
+              <small id="video-upload-info" class="dashboard-msg">No uploaded videos saved yet.</small>
+              <button type="button" id="clearVideoUploads" class="btn btn-ghost" style="margin-top:10px;">Clear Uploaded Videos</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="galleryImages">Gallery Image URLs (optional, one URL per line)</label>
+              <textarea id="galleryImages" rows="6" placeholder="https://example.com/photo1.jpg&#10;https://example.com/photo2.jpg"></textarea>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="galleryUploadFiles">Upload Gallery Images (.png, .jpg, .jpeg)</label>
+              <input id="galleryUploadFiles" type="file" accept=".png,.jpg,.jpeg,image/png,image/jpeg" multiple />
+              <small id="gallery-upload-info" class="dashboard-msg">No uploaded gallery images saved yet.</small>
+              <button type="button" id="clearGalleryUploads" class="btn btn-ghost" style="margin-top:10px;">Clear Uploaded Gallery Images</button>
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Save Text Settings</button>
+          </div>
+          <p id="dashboard-save-msg" class="dashboard-msg"></p>
+        </form>
+        <hr style="margin:20px 0; border-color: rgba(255,255,255,0.12);" />
+        <h3>Dashboard Account Settings</h3>
+        <form id="dashboardAccountForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dashboardAccountEmail">Login Email</label>
+              <input id="dashboardAccountEmail" type="email" placeholder="admin@bethel.com" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="dashboardCurrentPassword">Current Password</label>
+              <input id="dashboardCurrentPassword" type="password" placeholder="Current password" />
+            </div>
+          </div>
+          <div class="form-row two-col">
+            <div class="form-group">
+              <label for="dashboardNewPassword">New Password</label>
+              <input id="dashboardNewPassword" type="password" placeholder="New password" />
+            </div>
+            <div class="form-group">
+              <label for="dashboardConfirmPassword">Confirm New Password</label>
+              <input id="dashboardConfirmPassword" type="password" placeholder="Confirm new password" />
+            </div>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Update Login Credentials</button>
+            <button type="button" id="dashboardLogoutBtn" class="btn btn-ghost">Logout</button>
+          </div>
+          <p id="dashboard-account-msg" class="dashboard-msg"></p>
+        </form>
+      </div>
+
+      <div class="info-card">
+        <h3>Bookings</h3>
+        <p class="page-hero-sub" style="margin:0 0 16px 0;">All submitted bookings appear below.</p>
+        <div class="dashboard-table-wrap">
+          <table class="dashboard-table" id="bookingsTable">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Service</th>
+                <th>Date</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner container">
+    <div class="footer-brand">
+      <img src="logo.png" alt="Bethel Drums" class="footer-logo" />
+      <p>Beat. Create. Inspire.</p>
+      <p class="footer-handle">@bethel.drums</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="bookings.html">Bookings</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Kenya</p>
+      <p><a href="mailto:betheldrums01@gmail.com">betheldrums01@gmail.com</a></p>
+      <a href="bookings.html" class="btn btn-primary" style="margin-top:1rem;">Book Now</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Bethel Drums. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<script src="main.js"></script>
+</body>
+</html>
